@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Passion+One:wght@400;700;900&display=swap");
+
+h1 {
+    color: #9ef4ff;
+    font-family: "Passion One", cursive;
+    font-size: 5em;
+    margin: 0 auto;
+    line-height: 50pt;
+    letter-spacing: 5px; 
+  }
+
+  h2 {
+    font-family: 'PT Serif', serif;
+    font-size: 30px;
+    color: #968d8d; 
+  }
+
+
+  p {
+    font-family: 'PT Serif', serif;
+    color: #968d8d;
+    padding: 10px; 
+  
+  }
+
+  li {
+
+  }
+
+  .contenedor {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+  }
