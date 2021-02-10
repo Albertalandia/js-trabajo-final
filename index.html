@@ -8,22 +8,15 @@
 </head>
 <body class="contenedor">
 <header>
-	<h1>Simulador de Préstamos Personales</h1>
+	<h1>Yo te presto la guita</h1>
 </header>
 <main>
-	<h2>Calcula la cuota mensual de tu préstamo personal en pocos pasos.</h2>
-	    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, magni. Fuga doloribus omnis ratione commodi assumenda atque perferendis, in ab ea consequuntur, quaerat dolorem iusto vero accusantium temporibus dolores qui.</p>
-	<form>
-		<div>
-			<h2>Selecciona tu préstamo</h2>
-			<select id="prestamo">
-			  <option>Coche</option>
-			  <option>Casa</option>
-			  <option>Proyecto personal</option>
-			</select>
-	   </div>
-		<h2>¿Cuanto dinero necesitas?</h2>
-		<select id="dinero">
+	<h2>Acá podés calcular cuanta plata me tenés que devolver por mes</h2>
+	<form class="formulario">
+		<h2>¿Cuál es tu nombre?</h2>
+		<input type="text" id="nombre" placeholder="Escribe tu nombre">
+		<h2>¿Cuánta guita querés?</h2>
+		    <select id="dinero" value="dinero">
 				<option>1000</option>
 				<option>5000</option>
 				<option>10000</option>
@@ -31,18 +24,29 @@
 				<option>30000</option>
 				<option>40000</option>
 				<option>50000</option>
+				<option>100000</option>
 			</select>
-		<h2>¿En cuanto tiempo querés devolver?</h2>
-		<select id="tiempo">
-				<option>1 año</option>
-				<option>2 años</option>
-				<option>3 años</option>
-				<option>4 años</option>
-				<option>5 años</option>
-				<option>6 años</option>
-				<option>7 años</option>
+		<h2>¿De dónde sos?</h2>
+		<input type="text" id="lugar" placeholder="lugar">
+		<h2>¿En cuántos meses me la vas a devolver?</h2>
+			<select id="meses" value="meses">
+					<option>6 meses</option>
+					<option>12 meses</option>
+					<option>18 meses</option>
+					<option>24 meses</option>
+					<option>30 meses</option>
+					<option>36 meses</option>
+					<option>42 meses</option>
 			</select>
-		<h2>¿Sos cliente de nuestro banco?</h2>
+		<h2>¿Sos amigo de mis amigos?</h2>
+			<input type="radio" id="si" name="cliente" value="si">
+			<label for="yes">si</label><br>
+			<input type="radio" id="no" name="cliente" value="no">
+			<label for="no">no</label><br>
+			<br><br>
+		<button type="reset" id="botonBorrar" value="Borrar formulario" />Reset</button>
+		<button type="button" onclick="recogerDatos()" id="botonEnviar" value="Enviar" />Enviar</button>
+
 </form>
 </main>
 <script src="script.js"></script>
