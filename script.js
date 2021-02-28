@@ -18,6 +18,18 @@
             intereses: parseInt((60000 * 5)/100),
         }
     ]; 
+
+    function prestamo (nombre, dinero, meses, intereses) {
+
+        this.nombre = nombre;
+        this.dinero = dinero;
+        this.meses = meses;
+        this.intereses = intereses;
+
+        this.informacion = function(){
+            return infoCuotaPrestamo(this)
+        };
+    }
     
     function recogerDatos() {
 
@@ -42,17 +54,7 @@
         return prestamo.dinero + " " + prestamo.intereses
     }
 
-    function prestamo (nombre, dinero, meses, intereses) {
 
-        this.nombre = nombre;
-        this.dinero = dinero;
-        this.meses = meses;
-        this.intereses = intereses;
-
-        this.informacion = function(){
-            return infoCuotaPrestamo(this)
-        };
-    }
 
     var miPrestamo = new prestamo (nombre, dinero, meses, intereses);
     todosLosPrestamos.push(new prestamo(nombre, dinero, meses, intereses));
@@ -66,10 +68,10 @@
     function sacarCuotaFinal(){
         
             if ( cliente ==="si") {
-                miCuotaConDescuento;
-        }   else if (cliente === "no"){
-            cuotaPrestamo;
-        }   return miCuotaConDescuento;
+                return miCuotaConDescuento;
+        }   else {
+                return cuotaPrestamo;
+        }  
     }
 
 
@@ -78,3 +80,27 @@
     parrafo.appendChild(contenido);
     document.body.appendChild(parrafo);
 }
+
+window.addEventListener('load', function () {
+    console.log('Hola!');
+  })
+  
+
+$( document ).ready(function() {
+   console.log( "Ya cargo todo" );
+});
+
+function myFunction() {
+    document.getElementById("caja").reset();
+  }
+
+
+
+$("#botonGolpeador").click(function(){ 
+    $("p.textoGolpeador").fadeIn(); 
+  });
+  
+
+  $("#botonSi").click(function(){ 
+    $("p.textoSi").fadeIn(); 
+  });
