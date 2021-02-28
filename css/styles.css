@@ -1,18 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Passion+One:wght@400;700;900&display=swap");
 
-h1 {
-    color: lime;
-    font-family: "Passion One", cursive;
-    font-size: 5em;
-    margin: 0 auto;
-    line-height: 50pt;
-    letter-spacing: 5px; 
-}
 
 h2 {
     font-family: 'PT Serif', serif;
-    font-size: 30px;
+    font-size: 20px;
     color: #968d8d; 
+    margin: 0 auto;
 }
 
 
@@ -22,9 +15,15 @@ p {
     color: #968d8d;
     padding: 10px;
     background-color: lime;
-  
 }
 
+.textoHome {
+    font-family: 'PT Serif', serif;
+    font-size: 25px;
+    padding: 10px;
+    background-color: rgba(230, 213, 198, 0.6);
+
+}
 
 .contenedor {
       display: flex;
@@ -37,16 +36,36 @@ p {
       background-size: 100%;
       background-repeat: no-repeat; 
       margin-right: 35%;
+      margin-left: 5%;
+}
+
+header {
+    align-content: flex-start;
+}
+
+.header__logo {
+    align-self: auto;
+    width: 20vw;
+  }
+
+.titulo {
+    color: lime;
+    font-family: "Passion One", cursive;
+    font-size: 5em;
+    margin: 0 auto;
+    line-height: 80pt;
+    letter-spacing: 0px; 
 }
 
 
-
-.formulario{
+.caja {
     border: 3px solid lime;
     border-radius: 15px;
-    margin-top: 0px;
+    margin: 0 auto;
     padding: 20px;
     background-color: rgba(230, 213, 198, 0.6);
+    width: 650px;
+
 }
 
 button {
@@ -54,4 +73,16 @@ button {
     border-radius: 10px;
     padding: 5px;
     color: grey;
+}
+
+.textoGolpeador {
+    display:none;
+    color: tomato;
+
+}
+
+.textoSi {
+    display:none;
+    color: blue
+
 }
